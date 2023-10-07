@@ -8,23 +8,55 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.geopedia.R
 
-import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import java.util.Locale
 
 class MapsFragment : Fragment() {
 
+    private val PERTH = LatLng(-31.952854, 115.857342)
+    private val SYDNEY = LatLng(-33.87365, 151.20689)
+    private val BRISBANE = LatLng(-27.47093, 153.0235)
+
+    private var markerPerth: Marker? = null
+    private var markerSydney: Marker? = null
+    private var markerBrisbane: Marker? = null
+
     private val callback = OnMapReadyCallback { googleMap ->
-        val sydney = LatLng(28.535517, 77.391029)
-        googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Noida"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-        setMapLongClick(googleMap)
+        // Add some markers to the map, and add a data object to each marker.
+        markerPerth = googleMap.addMarker(
+            MarkerOptions()
+                .position(PERTH)
+                .title("Perth")
+        )
+        markerPerth?.tag = 0
+        markerSydney = googleMap.addMarker(
+            MarkerOptions()
+                .position(SYDNEY)
+                .title("Sydney")
+        )
+        markerSydney?.tag = 0
+        markerBrisbane = googleMap.addMarker(
+            MarkerOptions()
+                .position(BRISBANE)
+                .title("Brisbane")
+        )
+        markerBrisbane?.tag = 0
+        markerBrisbane?.let { onMarkerClick(it) }
+        markerPerth?.let { onMarkerClick(it) }
+        markerSydney?.let { onMarkerClick(it) }
+    }
+
+    private fun onMarkerClick(it: Marker) {
+        if(it.title.equals("Perth")){
+
+
+        }
     }
 
     override fun onCreateView(
@@ -61,4 +93,8 @@ class MapsFragment : Fragment() {
             )
         }
     }
+
+
 }
+
+
