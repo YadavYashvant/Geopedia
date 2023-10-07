@@ -22,14 +22,14 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
 
-        binding.btnExplore.setOnClickListener {
+        /*binding.btnExplore.setOnClickListener {
             val url = "https://www.google.com"
             val url1 = "https://ladsweb.modaps.eosdis.nasa.gov/#land"
             val builder = CustomTabsIntent.Builder()
             builder.setToolbarColor(Color.parseColor("#6200EE"))
             val customTabsIntent = builder.build()
             customTabsIntent.launchUrl(requireContext(), Uri.parse(url1))
-        }
+        }*/
 
         return binding.root
 
