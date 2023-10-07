@@ -58,6 +58,7 @@ class MapsFragment : Fragment() {
         googleMap.setOnMarkerClickListener {
             onMarkerClick()
         }
+        setMapLongClick(googleMap)
     }
 
     private fun onMarkerClick(): Boolean {
