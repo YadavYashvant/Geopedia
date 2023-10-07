@@ -34,36 +34,15 @@ class HomeFragment : Fragment() {
 
         binding.btnExplore.setOnClickListener {
             val url = "https://www.google.com"
+            val url1 = "https://ladsweb.modaps.eosdis.nasa.gov/#land"
             val builder = CustomTabsIntent.Builder()
             builder.setToolbarColor(Color.parseColor("#6200EE"))
             val customTabsIntent = builder.build()
-            customTabsIntent.launchUrl(requireContext(), Uri.parse(url))
+            customTabsIntent.launchUrl(requireContext(), Uri.parse(url1))
         }
 
         return binding.root
 
-
     }
 
-
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }
