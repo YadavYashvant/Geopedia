@@ -70,51 +70,51 @@ class HomeFragment : Fragment() {
         cardList = ArrayList<HomeCardData>()
 
         title = arrayOf(
+            "NASA Earth Data",
             "Ladsweb Data",
+            "LAADS DAAC",
             "SAR Data",
             "HLS Data",
             "GRACE Data",
-            "GRACE2 Data",
-            "Economic Geology",
+            "GRACE-FO Data",
+            "EMIT Data",
             "Hydrogeology",
-            "Engineering Geology",
             )
 
         description = arrayOf(
+            getString(R.string.NasaEarth),
             getString(R.string.Ladsweb),
+            getString(R.string.laadsstring),
             getString(R.string.sarstring),
             getString(R.string.HLSstring),
             getString(R.string.gracestring),
             getString(R.string.gracestring),
-            getString(R.string.sarstring),
-            getString(R.string.sarstring),
-            getString(R.string.sarstring),
+            getString(R.string.emitstring),
             getString(R.string.sarstring),
             )
 
         image = arrayOf(
+            R.drawable.nasapic,
+            R.drawable.laads,
+            R.drawable.laads1,
             R.drawable.sar_headernasa,
             R.drawable.bitbucket,
             R.drawable.nasagrace,
             R.drawable.nasagrace2,
-            R.drawable.geologist,
-            R.drawable.geologist,
-            R.drawable.geologist,
+            R.drawable.emit,
             R.drawable.geologist,
         )
 
         urls = arrayOf(
-            "https://ladsweb.modaps.eosdis.nasa.gov/#land",
+            "https://search.earthdata.nasa.gov/search",
             "https://ladsweb.modaps.eosdis.nasa.gov/view-data/#@87.9,25.4,3.7z",
+            "https://ladsweb.modaps.eosdis.nasa.gov/search/",
             "https://appliedsciences.nasa.gov/get-involved/training/english/arset-introduction-synthetic-aperture-radar",
             "https://git.earthdata.nasa.gov/projects/LPDUR/repos/hls-tutorial/browse",
             "https://podaac.jpl.nasa.gov/GRACE",
-            "https://podaac.jpl.nasa.gov/GRACE-FO",
+            "https://grace.jpl.nasa.gov/data/data-analysis-tool/",
+            "https://earth.jpl.nasa.gov/emit/data/data-products/",
             "https://git.earthdata.nasa.gov",
-            "https://search.earthdata.nasa.gov/search",
-            "https://www.youtube.com",
-            "https://www.canva.com",
-            "https://www.wikipedia.com",
         )
 
         for (i in title.indices) {
