@@ -119,6 +119,7 @@ class HomeFragment : Fragment() {
         for (i in title.indices) {
             val cardData = HomeCardData(title[i], subtitle[i], description[i], image[i])
             cardList.add(cardData)
+
             }
         }
 }

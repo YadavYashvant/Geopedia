@@ -46,5 +46,4 @@ class HomeRVAdapter(private val cardList: ArrayList<HomeCardData>): RecyclerView
         /*val url: String? = null*/
         /*val btnExplore: MaterialButton = itemView.findViewById(R.id.btnExplore)*/
     }
-
 }

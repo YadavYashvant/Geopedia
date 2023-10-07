@@ -21,6 +21,7 @@ class MapsFragment : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
         val sydney = LatLng(28.535517, 77.391029)
+        googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
         googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Noida"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
         setMapLongClick(googleMap)
@@ -49,6 +50,7 @@ class MapsFragment : Fragment() {
                 latLng.latitude,
                 latLng.longitude
             )
+
             map.addMarker(
                 MarkerOptions()
                     .position(latLng)
