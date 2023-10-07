@@ -26,7 +26,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
         app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
-
         app:menu="@menu/bottom_menu"
         />
 

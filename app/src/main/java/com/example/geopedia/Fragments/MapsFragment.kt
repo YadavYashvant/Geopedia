@@ -22,26 +22,27 @@ import java.util.Locale
 
 class MapsFragment : Fragment() {
 
-    private val PERTH = LatLng(-31.952854, 115.857342)
+    private val PHOENIX = LatLng(33.4527195589178, -112.05370710089764)
     private val SYDNEY = LatLng(-33.87365, 151.20689)
     private val BRISBANE = LatLng(-27.47093, 153.0235)
 
-    private var markerPerth: Marker? = null
+    private var markerPhoenix: Marker? = null
     private var markerSydney: Marker? = null
     private var markerBrisbane: Marker? = null
 
     private val callback = OnMapReadyCallback { googleMap ->
         // Add some markers to the map, and add a data object to each marker.
-        markerPerth = googleMap.addMarker(
+        googleMap.mapType=GoogleMap.MAP_TYPE_HYBRID
+        markerPhoenix = googleMap.addMarker(
             MarkerOptions()
-                .position(PERTH)
-                .title("Perth")
+                .position(PHOENIX)
+                .title("Phoenix")
         )
-        markerPerth?.tag = 0
+        markerPhoenix?.tag = 0
         markerSydney = googleMap.addMarker(
             MarkerOptions()
                 .position(SYDNEY)
-                .title("Sydney")
+                .title("Sydney").visible(true)
         )
         markerSydney?.tag = 0
         markerBrisbane = googleMap.addMarker(
