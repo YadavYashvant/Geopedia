@@ -7,13 +7,13 @@
         app:showAsAction="ifRoom"
         />
     <item android:id="@+id/menu_map"
-        android:icon="@drawable/outline_map_24"
+        android:icon="@drawable/outline_arrow_outward_24"
         android:title="@string/menu_map"
         app:showAsAction="ifRoom"
         />
     <item
         android:id="@+id/menu_settings"
-        android:icon="@drawable/outline_dataset_24"
+        android:icon="@drawable/outline_bookmark_border_24"
         android:title="@string/menu_settings"
         app:showAsAction="ifRoom"
         />
