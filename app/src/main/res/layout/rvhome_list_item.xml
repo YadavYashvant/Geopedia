@@ -39,19 +39,13 @@
                 <!-- Title, secondary and supporting text -->
                 <TextView
                     android:id="@+id/titleitem"
+                    android:fontFamily="@font/spaceregular"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="This is title"
                     android:textAppearance="?attr/textAppearanceTitleMedium" />
-
-                <TextView
-                    android:id="@+id/secitem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="This is secondary text"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:textColor="?android:attr/textColorSecondary" />
 
                 <TextView
                     android:id="@+id/descitem"
@@ -77,8 +71,8 @@
                     android:id="@+id/btnExplore"
                     style="?attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="10dp"
                     android:text="Explore more.."
                     app:icon="@drawable/baseline_screen_search_desktop_24"
 
@@ -87,7 +81,8 @@
                 <com.google.android.material.button.MaterialButton
                     style="?attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="80dp"
                     android:text="Bookmark"
                     app:icon="@drawable/outline_dataset_linked_24" />
             </LinearLayout>

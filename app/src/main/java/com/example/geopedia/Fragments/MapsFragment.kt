@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
 import com.example.geopedia.R
 
 import com.google.android.gms.maps.GoogleMap
@@ -47,16 +50,27 @@ class MapsFragment : Fragment() {
                 .title("Brisbane")
         )
         markerBrisbane?.tag = 0
-        markerBrisbane?.let { onMarkerClick(it) }
-        markerPerth?.let { onMarkerClick(it) }
-        markerSydney?.let { onMarkerClick(it) }
+        markerBrisbane?.snippet = SectionFragment().toString()
+        /*markerPerth?.let { onMarkerClick(it) }
+        markerSydney?.let { onMarkerClick(it) }*/
+
+        googleMap.setOnMarkerClickListener {
+            onMarkerClick()
+        }
     }
 
-    private fun onMarkerClick(it: Marker) {
-        if(it.title.equals("Perth")){
+    private fun onMarkerClick(): Boolean {
+        // Retrieve the data from the marker.
+        /*Navigation.findNavController(requireView()).navigate(R.id.action_mapsFragment_to_sectionFragment2)*/
 
 
-        }
+        val ft: FragmentTransaction = requireFragmentManager().beginTransaction();
+        ft.replace(R.id.fragment_container,SectionFragment());
+        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        ft.addToBackStack(null)
+        ft.commit();
+
+        return true
     }
 
     override fun onCreateView(
