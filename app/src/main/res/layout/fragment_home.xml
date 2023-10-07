@@ -75,6 +75,7 @@
                 >
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnExplore"
                     style="?attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -85,6 +86,7 @@
                     />
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDataset"
                     style="?attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
