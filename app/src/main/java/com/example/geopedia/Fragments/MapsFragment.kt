@@ -54,10 +54,15 @@ class MapsFragment : Fragment() {
         /*markerPerth?.let { onMarkerClick(it) }
         markerSydney?.let { onMarkerClick(it) }*/
 
+        googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
+
         googleMap.setOnMarkerClickListener {
             onMarkerClick()
         }
+
+        setMapLongClick(googleMap)
     }
+
 
     private fun onMarkerClick(): Boolean {
         // Retrieve the data from the marker.
