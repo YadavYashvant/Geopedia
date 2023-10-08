@@ -6,7 +6,7 @@ Be a Space Geologist
 yashvantyadav855@gmail.com
 # A brief of the prototype
 ### Geopedia
-A one stop platform for all you Geological needs.<br>
+A one stop platform for all your Geological needs.<br>
 #### What's the issue ?
 Data available to Geologists from NASA satellites are unarranged, unlabeled and hard to understand.
 Satellites scan the earth in form of blocks and it becomes hard to differentiate data like RADAR scans, EMIT(Earth Surface Mineral Dust Source Investigation) data, SAR(Synthetic aperture radar) data, etc,. on the basis of location's conventional name. 
