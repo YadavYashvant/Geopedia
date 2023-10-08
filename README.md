@@ -28,7 +28,7 @@ https://github.com/YadavYashvant/Geopedia/assets/113130559/b581359a-34e6-404c-a4
 > Clone the repository<br>
 > Open the folder with Android Studio<br>
 > Obtain google maps api key from official site.(starts with "AIza..")<br>
-> Create MAPS_API_KEY = "your_api_key" in local.properties
+> Create MAPS_API_KEY = "your_api_key" in local.properties<br>
 > Run the Project after Gradle Build finishes inside AVD or Any other android device connected using debugging
 # Future Scope
 > Using API parsing to automate data feed into the application to make the process more streamlined<br>
