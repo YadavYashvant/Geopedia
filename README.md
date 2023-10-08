@@ -1,5 +1,5 @@
 # Team Name
-Byte Busters
+Bytebusters
 # Problem Statement
 Be a Space Geologist
 # Team Leader Email
