@@ -14,7 +14,6 @@ Satellites scan the earth in form of blocks and it becomes hard to differentiate
 We collect and catalogue goelogical data from satellite and present it to the user using Google maps API. This makes it easier for the user to locate the particular land that he/she needs to access the dataset of.
 #### See for yourself
 
-
 https://github.com/YadavYashvant/Geopedia/assets/113130559/b581359a-34e6-404c-a4f1-87508b6468e5
 
 
